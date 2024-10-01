@@ -21,3 +21,4 @@
 <p align = "center">
 	<img src = "https://github.com/RChefo/RChefo/blob/main/github-contribution-grid-snake.svg?" alt = "Snake Game"/>
 </p>
+redits: [RChefo](https://github.com/RChefo)
