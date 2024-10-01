@@ -4,8 +4,8 @@
 <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About me
 <picture> <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 250px></picture>
 <br><br>
-- 📫 How to reach me **rchefocontact.com@gmail.com**
 
+- 📫 How to reach me **rchefocontact.com@gmail.com**
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://discord.gg/https://discord.com/users/643530703002140718" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.com/users/643530703002140718" height="30" width="40" /></a>
