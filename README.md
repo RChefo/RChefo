@@ -1,8 +1,11 @@
 <h1 align="center">Hi 👋, I'm aka RChefo</h1>
 <h3 align="center">A passionate Cyber Security in Network engineer Ethical Hacker</h3>
-<img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=cyan&size=25&center=true&vCenter=true&width=600&height=100&lines=Hi 👋, I'm aka RChefo&hearts;++;A passionate Cyber Security in Network engineer Ethical Hacker;CTF+Newbie,;Active+Learner/Researcher,;Love+to+learn+new+stuffs..<3"></a>
-</p>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rchefo&label=Profile%20views&color=0e75b6&style=flat" alt="rchefo" /> </p>
+## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About me
+
+<picture> <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 250px></picture>
+
+<br><br>
 
 - 📫 How to reach me **rchefocontact.com@gmail.com**
 
