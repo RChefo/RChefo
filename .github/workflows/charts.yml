@@ -1,0 +1,64 @@
+name: Charts and cards
+
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "assets/*.json"
+      - "assets/source/**"
+      - "scripts/**"
+      - ".github/workflows/charts.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  charts:
+    runs-on: ubuntu-latest
+    # Job-level so the cards step's `if:` can see it (a step's own env can't be read there).
+    env:
+      METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Banner text lives in assets/profile.json; a photo at assets/source/photo.jpg
+      # replaces the monogram.
+      - name: Banner
+        run: |
+          pip install --quiet "Pillow>=10.1"
+          python scripts/banner.py
+
+      - name: Skill radar
+        run: python scripts/radar.py --data assets/skills.json -o assets/radar
+
+      - name: Language radar
+        run: python scripts/radar.py --data assets/langmix.json -o assets/radar-langs --values
+
+      # Needs a METRICS_TOKEN secret: a personal access token from RChefo with
+      # repo read access, so private repos and contributions are counted. The
+      # built-in GITHUB_TOKEN only sees public repos and would shrink the numbers,
+      # so without the secret this step is skipped and the committed cards stay.
+      - name: Stat and language cards
+        if: env.METRICS_TOKEN != ''
+        env:
+          GITHUB_TOKEN: ${{ env.METRICS_TOKEN }}
+        run: |
+          python scripts/cards.py \
+            --user "${{ github.repository_owner }}" \
+            --out assets \
+            --exclude "NSIS,Batchfile,PowerShell,Shell,Dockerfile"
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git diff --staged --quiet || git commit -m "chore: refresh charts and cards"
+          git push

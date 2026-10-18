@@ -1,0 +1,13 @@
+{
+  "title": "Skill Radar",
+  "_comment": "Self-rated, 0-100. Edit these and the Charts workflow redraws the radar.",
+  "axes": [
+    { "label": "Full-Stack Web",     "value": 86 },
+    { "label": "React / Next.js",    "value": 85 },
+    { "label": "Node / Express",     "value": 82 },
+    { "label": "Discord Bots",       "value": 84 },
+    { "label": "Databases",          "value": 74 },
+    { "label": "Cloud & DevOps",     "value": 70 },
+    { "label": "UI / UX Design",     "value": 68 }
+  ]
+}

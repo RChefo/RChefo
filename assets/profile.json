@@ -1,0 +1,24 @@
+{
+  "_comment": "Banner text. Edit, then run: python scripts/banner.py",
+  "title": "profile.sh --live",
+  "monogram": "RC",
+  "rows": [
+    ["Subject", "RChefo"],
+    ["Role", "Full-Stack Developer"],
+    ["Origin", "Cairo, Egypt"],
+    ["Status", "Building + Learning + Shipping"],
+    ["Projects", "Winy · Rookn · dooit"],
+    ["ToolChain", "VS Code · Git · GitHub"],
+    ["Core.Lang", "TypeScript · JavaScript · Python · Rust"],
+    ["Core.Frontend", "React · Next.js · Vue · Vite"],
+    ["Core.Backend", "Node · Express · .NET"],
+    ["Core.Database", "Postgres · MongoDB · Redis"],
+    ["Core.Infra", "Vercel · Cloudflare · AWS"],
+    ["Grid.Web", "playwiny.io"],
+    ["Grid.Mail", "chef@playwiny.io"],
+    ["Grid.Discord", "discord.gg/winy"],
+    ["Grid.GitHub", "RChefo"]
+  ],
+  "status": "ALL SYSTEMS NOMINAL",
+  "node": "UTC+2 · CAIRO NODE"
+}

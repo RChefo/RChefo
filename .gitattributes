@@ -1,0 +1,11 @@
+# Keep LF for anything the Linux Actions runners execute or regenerate,
+# so CRLF from a Windows checkout can't break `run: |` blocks or churn diffs.
+*.yml   text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.svg   text eol=lf
+
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
